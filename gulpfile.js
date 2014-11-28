@@ -28,5 +28,9 @@ elixir(function(mix) {
        .publish(
             'font-awesome/fonts',
             'public/css/fonts'
+        )
+       .publish(
+            'angular/angular.min.js',
+            'public/js/vendor/angular.js'
         );
 });
