@@ -15,6 +15,11 @@ $router->get('/', 'WelcomeController@index');
 
 $router->get('/home', 'HomeController@index');
 
+$router->group(['before' => 'auth'], function($router)
+{
+   $router->get('show', 'ShowController@index');
+});
+
 /*
 |--------------------------------------------------------------------------
 | Authentication & Password Reset Controllers

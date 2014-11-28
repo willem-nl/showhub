@@ -1,6 +1,6 @@
-<?php namespace App\Http\Requests\Auth;
+<?php namespace Showhub\Http\Requests\Auth;
 
-use App\Http\Requests\Request;
+use Showhub\Http\Requests\Request;
 
 class RegisterRequest extends Request {
 

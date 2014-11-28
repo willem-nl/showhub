@@ -1,4 +1,4 @@
-<?php namespace App\Providers;
+<?php namespace Showhub\Providers;
 
 use Illuminate\Routing\Router;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
@@ -12,7 +12,16 @@ class RouteServiceProvider extends ServiceProvider {
 	 *
 	 * @var string
 	 */
-	protected $namespace = 'App\Http\Controllers';
+	protected $namespace = 'Showhub\Http\Controllers';
+
+    /**
+     * In case of Route Annotations use this:
+     */
+    // protected $scanWhenLocal = true;
+
+    // protected $scan = [
+    //  'Showhub\Http\Controllers\HomeController'
+    //];
 
 	/**
 	 * Define your route model bindings, pattern filters, etc.

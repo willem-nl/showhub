@@ -1,4 +1,4 @@
-<?php namespace App\Http\Controllers;
+<?php namespace Showhub\Http\Controllers;
 
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Foundation\Validation\ValidatesRequests;

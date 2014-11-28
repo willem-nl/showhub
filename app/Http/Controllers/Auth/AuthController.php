@@ -1,8 +1,8 @@
-<?php namespace App\Http\Controllers\Auth;
+<?php namespace Showhub\Http\Controllers\Auth;
 
-use App\User;
-use App\Http\Requests;
-use App\Http\Controllers\Controller;
+use Showhub\User;
+use Showhub\Http\Requests;
+use Showhub\Http\Controllers\Controller;
 use Illuminate\Contracts\Auth\Guard;
 
 class AuthController extends Controller {
