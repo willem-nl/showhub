@@ -1,5 +1,7 @@
 <?php
 
+use \Showhub\Http\Importers\TraktImporter;
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -20,6 +22,10 @@ $router->group(['before' => 'auth'], function($router)
    $router->get('show', 'ShowController@index');
 });
 
+$router->get('search/{query}', function($query) {
+    $importer = new TraktImporter();
+    dd($importer->search($query));
+});
 /*
 |--------------------------------------------------------------------------
 | Authentication & Password Reset Controllers
